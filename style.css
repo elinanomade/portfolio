@@ -191,7 +191,10 @@ header {
 .carousel-item {
   flex: 1 0 100%;
 }
-
+.carousel-item img {
+  max-width: 250px;
+  max-height: 300px;
+}
 .prev-button,
 .next-button {
   position: absolute;
