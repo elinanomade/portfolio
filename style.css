@@ -118,19 +118,32 @@ header {
   margin-right: 50px;
 }
 /* Skils container */
+
 #section_3 {
   height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background-color: #57ae60;
 }
 .cv-container_left {
   width: 30%;
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: #a5e1ab;
+  background: linear-gradient(
+    180deg,
+    #57ae60 5%,
+    #274f2b 31.25%,
+    #57ae60 58.33%,
+    #7daf4b 80.21%,
+    #57ae60 100%
+  );
   align-items: center;
+}
+.cv-item img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 .cv-item img {
   max-width: 200px;
@@ -142,14 +155,15 @@ header {
   flex-direction: row;
 }
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  grid-template-row: repeat(2, 1fr);
+  /*grid-template-rows: repeat(2, 1fr); */
   gap: 30px;
+  justify-content: center;
 }
 
 .grid-item {
-  background-color: #57ae60;
+  /* background-color: #57ae60; */
   padding: 20px;
   font-size: 28px;
   text-align: center;
@@ -160,24 +174,46 @@ header {
 .no-bullet {
   list-style-type: none;
 }
-.skill-box_right,
-.skill-box_right {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  flex-wrap: wrap;
-  align-items: start;
-  margin: 10% 10%;
+/* Carousel section */
+.carousel-container {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
 }
 
-.skill-title {
-  font-family: "Gochi hand";
-  font-size: 18px;
+.carousel-items {
+  display: flex;
+  width: calc(100% * 3);
+  transition: transform 0.3s ease-in-out;
 }
 
-#section_3 {
-  background-color: #57ae60;
+.carousel-item {
+  flex: 1 0 100%;
 }
 
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+/* footer  */
 footer {
   display: flex;
   justify-content: space-between;
