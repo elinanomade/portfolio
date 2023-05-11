@@ -117,19 +117,29 @@ header {
   line-height: 1.5;
   margin-right: 50px;
 }
-
-.skill-box_right,
-.skill-box_right {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* flex-wrap: wrap;
-  align-items: start; */
-  /* margin: 10% 10%; */
+/* Skils container */
+#section_3 {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-
-.skill-title {
-  font-family: "Gochi hand";
-  font-size: 18px;
+.cv-container_left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #a5e1ab;
+  align-items: center;
+}
+.cv-item img {
+  max-width: 200px;
+  max-height: 300px;
+  justify-content: center;
+}
+.cv-container_left,
+.grid-container {
+  flex-direction: row;
 }
 .grid-container {
   display: grid;
@@ -149,6 +159,19 @@ header {
 }
 .no-bullet {
   list-style-type: none;
+}
+.skill-box_right,
+.skill-box_right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  align-items: start;
+  margin: 10% 10%;
+}
+
+.skill-title {
+  font-family: "Gochi hand";
+  font-size: 18px;
 }
 
 #section_3 {
