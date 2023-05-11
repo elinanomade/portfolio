@@ -99,7 +99,7 @@ header {
 
 .container_right h1 {
   font-family: "Gochi hand", cursive, sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   color: #000;
   text-align: center;
   margin-bottom: 20px;
@@ -111,4 +111,31 @@ header {
   text-align: left;
   line-height: 1.5;
   margin-right: 50px;
+}
+
+.skill-box_right,
+.skill-box_right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* flex-wrap: wrap;
+  align-items: start; */
+  /* margin: 10% 10%; */
+}
+
+.skill-title {
+  font-family: "Gochi hand";
+  font-size: 18px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #57ae60;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
