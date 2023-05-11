@@ -104,6 +104,10 @@ header {
   text-align: center;
   margin-bottom: 20px;
 }
+.container_right h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .container_left p {
   font-size: 16px;
