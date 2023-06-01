@@ -117,6 +117,8 @@ header {
 .container_right h2 {
   text-align: center;
   margin-bottom: 20px;
+}
+h2 {
   background-color: white;
 }
 .title-word {
@@ -217,7 +219,7 @@ header {
 }
 .grid-container {
   display: flex;
-  grid-template-row: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   /*grid-template-rows: repeat(2, 1fr); */
   gap: 30px;
   justify-content: center;
@@ -246,13 +248,13 @@ header {
 
 .carousel-items {
   display: flex;
-  width: calc(100% * 3);
-  transition: transform 0.3s ease-in-out;
+  width: calc(100% * 5);
 }
 .carousel-item img,
 .carousel-item p.image-description {
   display: inline-block;
   vertical-align: middle; /* Adjust vertical alignment if necessary */
+  margin: 10px;
 }
 
 .carousel-item {
