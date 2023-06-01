@@ -12,7 +12,7 @@ prevButton.addEventListener("click", () => {
 });
 
 nextButton.addEventListener("click", () => {
-  if (currentPosition > -carouselItemWidth * 5) {
+  if (currentPosition > -carouselItemWidth * 7) {
     currentPosition -= carouselItemWidth;
     carouselItems.style.transform = `translateX(${currentPosition}px)`;
   }
