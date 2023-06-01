@@ -230,7 +230,7 @@ h2 {
   padding: 20px;
   font-size: 28px;
   text-align: center;
-  border: solid #4c4556 2px;
+  border: solid #3b3149 2px;
 }
 .grid-item ul {
   font-size: 16px;
@@ -238,55 +238,55 @@ h2 {
 .no-bullet {
   list-style-type: none;
 }
-/* Carousel section */
-.carousel-container {
-  width: 500px;
-  height: 300px;
-  overflow: hidden;
+/*Carousel section*/
+.slideshow-container {
+  max-width: 1000px;
   position: relative;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel-items {
+/* Make the images invisible by default */
+.Containers {
+  margin-left: 20%;
   display: flex;
-  width: calc(100% * 5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center !important;
 }
-.carousel-item img,
-.carousel-item p.image-description {
+.Containers img {
+  height: 300px;
   display: inline-block;
-  vertical-align: middle; /* Adjust vertical alignment if necessary */
+  vertical-align: middle;
   margin: 10px;
 }
-
-.carousel-item {
-  /* flex: 1 0 10%; */
-  display: flex;
-  align-items: center;
+.Containers p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
 }
-.carousel-item img {
-  max-width: 250px;
-  max-height: 300px;
-  margin-left: 100px;
-}
-
-.prev-button,
-.next-button {
+/* forward & Back buttons */
+.Back,
+.forward {
+  cursor: pointer;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  color: #fff;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 27px;
+  color: #3b3149;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
 }
 
-.prev-button {
-  left: 0;
-}
-
-.next-button {
+/* Place the "forward button" to the right */
+.forward {
   right: 0;
+  border-radius: 4px 0 0 4px;
 }
 
 /* footer  */
