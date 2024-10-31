@@ -14,7 +14,7 @@
   display: inline-block;
   vertical-align: middle; /* Adjust vertical alignment if necessary */
   margin: 10px;
-} 
+}
 
 .carousel-item {
   /* flex: 1 0 10%; */
@@ -47,4 +47,4 @@
 
 .next-button {
   right: 0;
-} */
+}
